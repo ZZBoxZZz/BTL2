@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberPhone</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BS4 CSS     -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .loader {
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="margin-top: -45px;">
+      <nav class="phoneNav container navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">CyberPhone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#phoneNavbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="phoneNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="phoneCarousel">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div>
+              <h1>CyberPhone</h1>
+              <h3>Best Smartphone of 2021!</h3>
+              <p>
+                Cras tortor mi, lobortis quis ornare in, varius scelerisque
+                urna. Vivamus imperdiet dolor nec odio convallis consequat.
+              </p>
+              <div>
+                <button class="btnPhone-white mr-2">
+                  <i class="fa fa-info-circle"></i> More Info
+                </button>
+                <button class="btnPhone-blue">
+                  <i class="fa fa-shopping-cart"></i> Shop
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-md-block d-none">
+            <img class="img-fluid" src="./img/product-header2.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products container section">
+      <h2 class="section-title">-Featured Products-</h2>
+      <div class="products">
+        <div class="sp">
+            <div>
+              <img class="anhsp" src="./img/product1.png" >
+            </div>
+          <div class="thongtin">
+              <p class="tensp">tai nghe sámunga12</p>
+              <div class="daban"><span><svg class="star" xmlns="http://www.w3.org/2000/svg" width="67.67" height="10.836" viewBox="0 0 67.67 10.836">
+                <g id="Group_1" data-name="Group 1" transform="translate(-67.397 -32.875)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(65.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(93.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(107.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-6" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(121.147 29.5)" fill="#fdd836"></path>
+                </g></svg></span>|   Đã bán 73 </div>
+              
+          </div>
+          <input type="number" name="soluong" min="1" max="10" value="1">
+          <a class="gia">500$</a> <a class="giamgia">-5%</a>	
+          <button class="mua" onclick="themvaogiohang(this)">Đặt hàng</button>
+      </div> 
+      <div class="sp">
+            <div>
+              <img class="anhsp" src="./img/product3.png" >
+            </div>
+          <div class="thongtin">
+              <p class="tensp"> Imac pro 15in</p>
+              <div class="daban"><span><svg class="star" xmlns="http://www.w3.org/2000/svg" width="67.67" height="10.836" viewBox="0 0 67.67 10.836">
+                <g id="Group_1" data-name="Group 1" transform="translate(-67.397 -32.875)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(65.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(93.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(107.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-6" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(121.147 29.5)" fill="#fdd836"></path>
+                </g></svg></span>|   Đã bán 73 </div>
+              
+          </div>
+          <input type="number" name="soluong" min="1" max="10" value="1">
+          <a class="gia">100$</a> <a class="giamgia">-5%</a>	
+          <button class="mua" onclick="themvaogiohang(this)">Đặt hàng</button>
+      </div>
+      <div class="sp">
+            <div>
+              <img class="anhsp" src="./img/product4.png" >
+            </div>
+          <div class="thongtin">
+              
+              <p class="tensp">Đồng hòa xiaomi b4</p>
+              <div class="daban"><span><svg class="star" xmlns="http://www.w3.org/2000/svg" width="67.67" height="10.836" viewBox="0 0 67.67 10.836">
+                <g id="Group_1" data-name="Group 1" transform="translate(-67.397 -32.875)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(65.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(93.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(107.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-6" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(121.147 29.5)" fill="#fdd836"></path>
+                </g></svg></span>|   Đã bán 73 </div>
+              
+          </div>
+          <input type="number" name="soluong" min="1" max="10" value="1">
+          <a class="gia">120$</a> <a class="giamgia">-5%</a>	
+          <button class="mua" onclick="themvaogiohang(this)">Đặt hàng</button>
+      </div> 
+      <div class="sp">
+            <div>
+              <img class="anhsp" src="./img/product6.png" >
+            </div>     
+          <div class="thongtin">
+              
+              <p class="tensp"> Tai nghe ari port1</p>
+              <div class="daban"><span><svg class="star" xmlns="http://www.w3.org/2000/svg" width="67.67" height="10.836" viewBox="0 0 67.67 10.836">
+                <g id="Group_1" data-name="Group 1" transform="translate(-67.397 -32.875)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(65.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(93.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(107.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-6" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(121.147 29.5)" fill="#fdd836"></path>
+                </g></svg></span>|   Đã bán 73 </div>
+              
+          </div>
+          <input type="number" name="soluong" min="1" max="10" value="1">
+          <a class="gia">320$</a> <a class="giamgia">-5%</a>	
+          <button class="mua" onclick="themvaogiohang(this)">Đặt hàng</button>
+      </div> 
+      <div class="sp">
+            <div>   
+              <img class="anhsp" src="./img/product5.png" >
+            </div>       
+          <div class="thongtin">
+              
+              <p class="tensp">Loa nghe nhạc</p>
+              <div class="daban"><span><svg class="star" xmlns="http://www.w3.org/2000/svg" width="67.67" height="10.836" viewBox="0 0 67.67 10.836">
+                <g id="Group_1" data-name="Group 1" transform="translate(-67.397 -32.875)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(65.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(79.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(93.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(107.147 29.5)" fill="#fdd836"></path>
+                  <path id="Icon_ionic-ios-star-6" data-name="Icon ionic-ios-star" d="M13.477,7.126H9.645L8.481,3.651a.422.422,0,0,0-.792,0L6.525,7.126H2.667a.418.418,0,0,0-.417.417.306.306,0,0,0,.008.07.4.4,0,0,0,.175.294l3.149,2.219L4.373,13.641a.418.418,0,0,0,.143.469.4.4,0,0,0,.234.1.511.511,0,0,0,.26-.094l3.074-2.191,3.074,2.191a.488.488,0,0,0,.26.094.374.374,0,0,0,.232-.1.413.413,0,0,0,.143-.469l-1.209-3.514,3.123-2.24.076-.065a.4.4,0,0,0-.307-.7Z" transform="translate(121.147 29.5)" fill="#fdd836"></path>
+                </g></svg></span>|   Đã bán 73 </div>
+              
+          </div>
+          <input type="number" name="soluong" min="1" max="10" value="1">
+          <a class="gia">432$</a> <a class="giamgia">-5%</a>	
+          <button class="mua" onclick="themvaogiohang(this)">Đặt hàng</button>
+      </div>
+      
+    </section>
+    <div id="giohang" class="giohang">
+      <a onclick="showcart()"><img src="./img/shopping-cart.svg" style="height: 39px"><span id="countsp">0</span></a>
+  </div>
+  <div class="showcart" id="showcart">
+      <table>
+          <tr>
+              <th>STT</th>
+              <th>Hình</th>
+              <th>Tên sản phẩm</th>
+              <th>Đơn giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền ($)</th>
+              <th>Xóa</th>
+          </tr>
+          <tbody id="mycart">
+              
+          </tbody>
+      </table>
+      <br>
+      <button onclick="xoatatca()" style="float: right;">Xóa tất cả</button>
+  </div>
+  
+  <script src="./hieuung.js">
+  </script>   
+    <footer class="footerPhone">
+      <img
+        class="img-fluid footer__light"
+        src="./img/angle-up-light.svg"
+        alt=""
+      />
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4">© 2021</div>
+          <div class="col-8">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://btl-2.vercel.app/adminpage/app/views/index.html">Admin PAGE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Thư viện hỗ trợ jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BS4 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/models/product.js"></script>
+    <script src="./src/services/productService.js"></script>
+    <script src="./src/controllers/main.js"></script>
+  </body>
+</html>
