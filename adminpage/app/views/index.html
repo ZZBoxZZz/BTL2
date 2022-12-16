@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quản lý người dùng</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownId"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Action 1</a>
+                <a class="dropdown-item" href="#">Action 2</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="display-4 my-4">
+        Thực hành javascript - axios với dự án quản lý trung tâm
+      </header>
+      <!-- Phan tab menu -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="#DanhSachSanPham"
+            role="tab"
+            data-toggle="tab"
+            >Danh sách người dùng</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="#DanhSachKhoaHoc"
+            role="tab"
+            data-toggle="tab"
+            >Danh sách 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ThongKe" role="tab" data-toggle="tab"
+            >Thống kê</a
+          >
+        </li>
+      </ul>
+      <br />
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!--Danh sách người dùng -->
+        <div role="tabpanel" class="tab-pane  in active" id="DanhSachSanPham">
+          <div class="row">
+            <div class="col-md-8">
+              <!-- BEGIN BUTTOM THÊM MỚI -->
+              <button
+                id="btnThemSanPham"
+                class="btn btn-success"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                <i class="fa fa-plus mr-1"></i>
+                Thêm Mới
+              </button>
+              <!-- END BUTTON THÊM MỚI -->
+            </div>
+            <div class="col-md-4">
+              <!-- BEGIN TÌM KIẾM -->
+              <div class="form-group row">
+                <label for="selLoai" class="col-sm-2 col-form-label"
+                  >Show</label
+                >
+                <div class="col-sm-10">
+                  <select class="form-control" id="sortLoai">
+                    <option>Chọn loại điện thoại</option>
+                    <option value="all">All</option>
+                    <option value="iphone">iphone</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Iphone">Iphone</option>
+                  </select>
+                </div>
+              </div>
+              <!-- END TÌM KIẾM -->
+            </div>
+          </div>
+          <div class="clear-fix"></div>
+          <div class="tblSanPham" id="tblSanPham">
+            <!-- BEGIN TABLE NGƯỜI DÙNG -->
+            <table class="table table-bordered">
+              <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Gía</th>
+                <th>Màn hình</th>
+                <th>Camera Sau</th>
+                <th>Camera Trước</th>
+                <th>Hình Anh3</th>
+                <th>Mô tả</th>
+                <th>Loại</th>
+                <th>Tùy chọn</th>
+              </thead>
+              <tbody id="tblDanhSachSanPham"></tbody>
+            </table>
+            <!-- END TABLE NGƯỜI DÙNG -->
+          </div>
+          <br />
+        </div>
+        <!-- Kết thúc danh sách người dùng -->
+        <!-- Danh sách khóa học -->
+        <div role="tabpanel" class="tab-pane fade" id="DanhSachKhoaHoc">
+          <span>Đang cập nhật...</span>
+        </div>
+        <!-- Kết thúc danh sách khóa học -->
+        <!-- Thống kê -->
+        <div role="tabpanel" class="tab-pane fade" id="ThongKe">
+          <span>Đang cập nhật...</span>
+        </div>
+        <!-- Kết thúc thống kê -->
+      </div>
+
+      <!--KetThuc Tabmenu-->
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 id="modalTitle" class="modal-title">Modal Heading</h4>
+              <button type="button" class="close" data-dismiss="modal" onclick="refresh()">
+                &times;
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-group"style="display: none;">
+                <label>STT</label>
+                <input
+                  id="id"
+                  class="form-control"
+                  placeholder="STT"
+                />
+                <div
+                  id="errorSTT"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label>Tên</label>
+                <input
+                  id="Ten"
+                  class="form-control"
+                  placeholder="Nhập vào tên"
+                />
+                <div
+                  id="errorTen"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label>Gía</label>
+                <input
+                  id="Gia"
+                  class="form-control"
+                  placeholder="Nhập vào giá"
+                />
+                <div
+                  id="errorPrice"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label>Màn hình</label>
+                <input
+                  id="Manhinh"
+                  class="form-control"
+                  placeholder="Nhập vào kích thước màn hình"
+                />
+                <div
+                  id="errorScreen"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label>Camera sau</label>
+                <input 
+                  id="CameraSau"
+                  class="form-control"
+                  placeholder="Nhập vào thông số cam sau"
+                />
+                <div
+                  id="errorbackCamera"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>  
+              <div class="form-group">
+                <label>Camera trước</label>
+                <input
+                  id="CameraTruoc"
+                  class="form-control"
+                  placeholder="Nhập vào thông số cam trước"
+                />
+                <div
+                  id="errorfrontCamera"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>
+              <div class="form-group">
+                <label>Hình Ảnh</label>
+                <input
+                  id="HinhAnh"
+                  class="form-control"
+                  placeholder="Nhập vào thông số cam trước"
+                />
+                <div
+                  id="errorPic"
+                  style="display: none"
+                  class="text-danger"
+                ></div>
+              </div>               
+              <div class="form-group">
+                <label>Mô tả</label>
+                <textarea name="" id="MoTa" class="form-control" placeholder="Nhập vào mô tả"></textarea>
+                <div
+                  id="errorDecr"
+                  style="display: none"
+                  class="text-danger"
+                ></div>  
+              </div>
+              <div class="form-group">
+                <label for="">Loại Điện Thoại: </label>
+                <select class="form-control" id="loaiDT">
+                  <option>Chọn loại điện thoại</option>
+                  <option value="iphone">iphone</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="Iphone">Iphone</option>
+                </select>
+                <div
+                  id="errorType"
+                  style="display: none"
+                  class="text-danger"
+                ></div> 
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              onclick="refresh()"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-warning" id="btnCapNhat">
+              Cập Nhật
+            </button>
+            <button type="button" class="btn btn-success" id="btnThem">
+              Thêm
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container"></div>
+    <style>
+      #container {
+        min-width: 310px;
+        max-width: 800px;
+        height: 400px;
+        margin: 0 auto;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="../models/product.js"></script> -->
+    <!-- <script src="../services/productService.js"></script> -->
+    <script src="../validation/validation.js"></script>
+    <script type="module" src="../controllers/main.js"></script>
+  </body>
+</html>

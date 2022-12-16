@@ -1,0 +1,187 @@
+*{
+    transition: 0,3s;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 40px auto;
+    max-width: 100%;
+    background: #f0c34c;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.nen{
+    margin: 40px auto;
+    background-color: white;
+    width: 1200px;
+    height: 850px;
+    padding-top: -3px;
+}
+           
+.anhsp {
+    width: 200px;
+    height: auto;
+}
+.free{
+    position:absolute;
+    width: 150px;
+    left: 0px;
+    bottom: 0px;
+}
+.sp{
+    width: 200px;
+    padding: 15px 18px;
+    background-color: rgb(229, 241, 246);
+    display:inline-block;
+    height: 360px;
+}
+.sp:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.noibat{
+    position: relative;
+    top: -290px;
+
+
+}
+.thanh{
+    position: relative;
+}
+.ad{
+    margin-top: 20px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    padding: 4px;
+    width: 13px;
+    background: #e3e3e3;
+    font-size: 10px;
+    color: #38383D;
+    
+}
+.mua{
+    border-color: #ff0000;
+    border-radius: 7px;
+    padding: 4px 9px;
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.anhnoibat{
+    width: 52px;
+}
+.danhmucnb{
+    background: #e1f7ff;
+    height: 52px;
+    margin-top: 10px;
+    
+
+}
+.daban{
+    color: #787878;
+    font-size: 12px;
+    margin-bottom: 5px;
+    
+}
+.tensp{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.tinnoi{
+    width: 200px;
+    padding: 15px 18px;
+    background-color: white;
+    height: 350px;
+}
+.gia{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.star{
+    margin-right: 7px;
+}
+.textnb{
+    vertical-align: 20px;
+}
+.giamgia{
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: red;
+    background-color: rgb(255, 231, 231);
+    font-size: 12px;
+    margin-left: 8px;
+    vertical-align: text-top;
+    margin-top: 1px;
+}
+.giohang {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 20px;
+    height: 60px;
+    background-color: #36e7db;
+    padding: 10px;
+    color: #e1f7ff;
+}
+.giohang span{
+    font-weight: bold;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    line-height: 40px;
+}
+/* giỏ hàng */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #e1f7ff;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px rgb(255, 255, 255) solid;
+    text-align: center;
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: right;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+td img {
+    width: 100px;
+}
+
+.showcart{
+    position: fixed;
+    border-radius:10px;
+    right:20px;
+    top: 98px;
+    padding:10px;
+    background-color: #36e7db;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
